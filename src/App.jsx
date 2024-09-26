@@ -1,21 +1,21 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 
-import { lazy, Suspense } from "react";
+import { lazy, Suspense } from 'react';
 
-import Loader from "./components/Loader/Loader";
-import HeaderNav from "./components/HeaderNav/HeaderNav.jsx";
+import Loader from './components/Loader/Loader';
 
-const Home = lazy(() => import("./pages/Home/Home"));
-const Catalog = lazy(() => import("./pages/Catalog/Catalog"));
-const Details = lazy(() => import("./pages/Details/Details"));
-const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
-const Reviews = lazy(() => import("./components/Reviews/Reviews"));
-const Features = lazy(() => import("./components/Features/Features"));
+import Layout from './components/Layout/Layout.jsx';
+
+const Home = lazy(() => import('./pages/Home/Home'));
+const Catalog = lazy(() => import('./pages/Catalog/Catalog'));
+const Details = lazy(() => import('./pages/Details/Details'));
+const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
+const Reviews = lazy(() => import('./components/Reviews/Reviews'));
+const Features = lazy(() => import('./components/Features/Features'));
 
 function App() {
   return (
-    <div>
-      <HeaderNav />
+    <Layout>
       <main>
         <Suspense fallback={<Loader />}>
           <Routes>
@@ -29,7 +29,7 @@ function App() {
           </Routes>
         </Suspense>
       </main>
-    </div>
+    </Layout>
   );
 }
 

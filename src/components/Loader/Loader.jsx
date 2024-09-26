@@ -1,5 +1,4 @@
-import React from "react";
-import { DNA } from "react-loader-spinner";
+import { DNA } from 'react-loader-spinner';
 
 const Loader = () => {
   return (

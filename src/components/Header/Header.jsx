@@ -1,17 +1,19 @@
-import React from "react";
-import { NavLink, Outlet } from "react-router-dom";
-import { Suspense } from "react";
-import clsx from "clsx";
-import css from "./HeaderNav.module.css";
+import React from 'react';
+import { NavLink, Outlet } from 'react-router-dom';
+import { Suspense } from 'react';
+import clsx from 'clsx';
+import css from './Header.module.css';
+import Logo from '../Logo/Logo';
 
 const buildLinkClass = ({ isActive }) => {
   return clsx(css.navLink, isActive && css.active);
 };
 
-const HeaderNav = () => {
+const Header = () => {
   return (
     <div>
       <header>
+        <Logo />
         <nav className={css.nav}>
           <NavLink to="/" className={buildLinkClass}>
             Home
@@ -31,4 +33,4 @@ const HeaderNav = () => {
   );
 };
 
-export default HeaderNav;
+export default Header;
