@@ -1,11 +1,14 @@
-import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import css from './Logo.module.css';
 
 const Logo = () => {
-  return (
-    <div>
-      Travel<span>Trucks</span>
-    </div>
-  );
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate('/');
+  };
+
+  return <div className={css.logo} onClick={handleClick}></div>;
 };
 
 export default Logo;

@@ -1,7 +1,12 @@
-import React from "react";
+import React from 'react';
+import CampersList from '../../components/CampersList/CampersList';
 
 const Catalog = () => {
-  return <div>Catalog</div>;
+  return (
+    <div>
+      <CampersList />
+    </div>
+  );
 };
 
 export default Catalog;

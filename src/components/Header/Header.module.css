@@ -1,0 +1,21 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  gap: 450px;
+  background-color: var(--primary-color-inputs);
+}
+.nav {
+  display: flex;
+  gap: 32px;
+}
+
+.navLink:hover {
+  color: var(--secondary-color-button);
+}
+
+.active:hover {
+  color: var(--secondary-color-button);
+}
+.current {
+  color: var(--secondary-color-button);
+}

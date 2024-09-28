@@ -1,0 +1,29 @@
+.cardContainer {
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid var(--secondary-color-gray);
+  margin-bottom: 32px;
+  padding: 24px;
+  width: 888px;
+  height: 368px;
+}
+.img {
+  background-size: contain;
+  border-radius: 10px;
+}
+.camperImg {
+  height: 320px;
+  margin-right: 24px;
+}
+.textWrap {
+  display: flex;
+  align-items: center;
+  gap: 248px;
+}
+.priceWrap {
+  display: flex;
+  gap: 12px;
+}
+.contentWrap {
+  display: flex;
+}

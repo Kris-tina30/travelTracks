@@ -6,13 +6,13 @@ import css from './Header.module.css';
 import Logo from '../Logo/Logo';
 
 const buildLinkClass = ({ isActive }) => {
-  return clsx(css.navLink, isActive && css.active);
+  return clsx(css.navLink, isActive && css.active, isActive && css.current);
 };
 
 const Header = () => {
   return (
     <div>
-      <header>
+      <header className={css.headerContainer}>
         <Logo />
         <nav className={css.nav}>
           <NavLink to="/" className={buildLinkClass}>
@@ -21,9 +21,9 @@ const Header = () => {
           <NavLink to="/catalog" className={buildLinkClass}>
             Catalog
           </NavLink>
-          <NavLink to="/details" className={buildLinkClass}>
+          {/* <NavLink to="/details" className={buildLinkClass}>
             Details
-          </NavLink>
+          </NavLink> */}
         </nav>
       </header>
       <Suspense>
