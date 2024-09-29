@@ -1,8 +1,8 @@
 import React from 'react';
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+// import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 const SideBar = () => {
-  return <div></div>;
+  return <div>SideBar</div>;
 };
 
 export default SideBar;
