@@ -3,14 +3,12 @@
   cursor: pointer;
   border: 1px solid var(--secondary-color-gray);
   border-radius: 12px;
-  padding: 16px 40px;
   transition: background-color 0.3s, border-color 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 112px;
   height: 96px;
-  gap: 8px;
 }
 
 /* Стиль для прихованого радіо-інпуту */
@@ -26,25 +24,17 @@
   gap: 8px;
 }
 
-/* Стиль для SVG */
-.iconFilter {
-  margin-right: 8px;
-  fill: #555;
-}
-
-/* Стиль для тексту */
 .textFilter {
   font-size: 16px;
-  color: #333;
+  display: flex;
+  flex-direction: column; /* Це дозволить відображати текст у колонку, але тільки для "Fully Integrated" */
+  align-items: center; /* Опційно, щоб вирівняти по центру */
 }
-
 /* Активний стан, коли радіо вибраний */
 .inputFilter:checked + .contentFilter {
-  background-color: #007bff;
-  color: white;
-  border-color: #007bff;
+  border-color: var(--primary-color-button);
 }
 
 .lableFilter:hover {
-  background-color: #e0e0e0;
+  border-color: var(--primary-color-button);
 }

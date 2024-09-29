@@ -24,7 +24,14 @@ const CategoriesFilter = ({
         <svg className={css.iconFilter} width="32" height="32">
           <use href={icon}></use>
         </svg>
-        <span className={css.textFilter}>{text}</span>
+        {text === 'Fully Integrated' ? (
+          <span className={css.textFilter}>
+            <span>Fully</span>
+            <span>Integrated</span>
+          </span>
+        ) : (
+          <span className={css.textFilter}>{text}</span>
+        )}
       </div>
     </label>
   );

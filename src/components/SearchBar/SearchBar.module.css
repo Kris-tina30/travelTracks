@@ -1,4 +1,49 @@
 .categoriesFilter {
   display: flex;
   gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 48px;
+}
+.locationFilter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--secondary-color-gray);
+}
+.locationInput {
+  color: inherit;
+  width: 360px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 42px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color-inputs);
+  background-color: var(--secondary-color-gray-light);
+  font-size: 16px;
+}
+.iconLocation {
+  fill: var(--secondary-color-gray);
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+}
+.locationContainer {
+  position: relative;
+  margin-bottom: 40px;
+}
+.locationInput::placeholder:hover {
+  color: var(--primary-color-black);
+}
+.locationInput::placeholder {
+  color: var(--secondary-color-gray);
+}
+.iconLocation:hover {
+  fill: var(--primary-color-black);
+}
+.textFilters {
+  margin-bottom: 32px;
+}
+.categoriesFilterContainer {
+  margin-top: 32px;
+  margin-bottom: 40px;
 }

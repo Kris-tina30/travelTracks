@@ -1,0 +1,15 @@
+.buttonRed {
+  font-size: 16px;
+  font-weight: 500;
+
+  width: 173px;
+  height: 56px;
+  border-radius: 200px;
+  background-color: var(--primary-color-button);
+  color: var(--primary-color-white);
+  padding: 0;
+  border: 0;
+}
+.buttonRed:hover {
+  background-color: var(--secondary-color-button);
+}
