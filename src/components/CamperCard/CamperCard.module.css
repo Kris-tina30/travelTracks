@@ -45,9 +45,8 @@
   margin-left: 16px;
 }
 .imgDescription {
-  white-space: nowrap; /* Не дозволяє переносити текст */
-  overflow: hidden; /* Ховає текст, який виходить за межі блоку */
-  text-overflow: ellipsis; /* Додає три крапки, якщо текст занадто довгий */
-  max-width: 292px; /* Встановлює максимальну ширину блоку опису */
-  font-size: 14px; /* Наприклад, можна вказати розмір тексту */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 520px;
 }

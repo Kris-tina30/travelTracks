@@ -13,7 +13,6 @@ const CamperCard = ({ camper }) => (
         height={320}
         className={css.img}
       />
-      <p className={css.imgDescription}>{camper.description}</p>
     </div>
     <div className={css.informationContainer}>
       <div className={css.textWrap}>
@@ -43,7 +42,7 @@ const CamperCard = ({ camper }) => (
         </div>
         <p>{camper.location}</p>
       </div>
-      <p>{camper.description}</p>
+      <p className={css.imgDescription}>{camper.description}</p>
       <Link to={`/campers/${camper.id}`}>
         <Button text="Show more" />
       </Link>

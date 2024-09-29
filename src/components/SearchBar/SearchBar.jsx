@@ -4,7 +4,6 @@ import css from './SearchBar.module.css';
 import Button from '../Button/Button';
 
 const SearchBar = ({ filters, updateFilters, filterCampers }) => {
-  // Функція для оновлення поля у фільтрах
   const handleInputChange = e => {
     const { name, value, type, checked } = e.target;
     const newValue = type === 'checkbox' ? checked : value;
@@ -16,7 +15,6 @@ const SearchBar = ({ filters, updateFilters, filterCampers }) => {
 
   return (
     <div>
-      {/* Фільтрація за локацією */}
       <div className={css.locationContainer}>
         <label className={css.locationFilter}>
           Location

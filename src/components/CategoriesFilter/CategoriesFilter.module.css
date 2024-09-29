@@ -1,4 +1,3 @@
-/* Стилі для контейнера */
 .lableFilter {
   cursor: pointer;
   border: 1px solid var(--secondary-color-gray);
@@ -11,12 +10,10 @@
   height: 96px;
 }
 
-/* Стиль для прихованого радіо-інпуту */
 .inputFilter {
   display: none;
 }
 
-/* Вміст "кнопки" */
 .contentFilter {
   display: flex;
   flex-direction: column;
@@ -27,10 +24,9 @@
 .textFilter {
   font-size: 16px;
   display: flex;
-  flex-direction: column; /* Це дозволить відображати текст у колонку, але тільки для "Fully Integrated" */
-  align-items: center; /* Опційно, щоб вирівняти по центру */
+  flex-direction: column;
 }
-/* Активний стан, коли радіо вибраний */
+
 .inputFilter:checked + .contentFilter {
   border-color: var(--primary-color-button);
 }

@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { fetchCamperById } from '../../services/api';
 import { useParams } from 'react-router-dom';
-import css from './CamperDetails.module.css'; // Ваші стилі для деталей кемпера
+import css from './CamperDetails.module.css';
 
 const CamperDetails = () => {
-  const { id } = useParams(); // Отримуємо ID з URL
+  const { id } = useParams();
   const [camper, setCamper] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -35,7 +35,6 @@ const CamperDetails = () => {
       <p>Location: {camper.location}</p>
       <p>Description: {camper.description}</p>
       <img src={camper.gallery[0].original} alt={camper.name} />
-      {/* Відображення інших деталей кемпера */}
     </div>
   );
 };

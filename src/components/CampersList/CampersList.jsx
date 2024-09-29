@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { fetchCampers } from '../../services/api';
-import css from './CampersList.module.css'; // Ваші стилі для списку кемперів
+import css from './CampersList.module.css';
 import CamperCard from '../CamperCard/CamperCard';
 
 const CampersList = ({ campers }) => {

@@ -1,4 +1,3 @@
-import React from 'react';
 import css from './CategoriesFilter.module.css'; // Імпорт файлу зі стилями
 
 const CategoriesFilter = ({
