@@ -5,13 +5,13 @@
   margin-bottom: 32px;
   padding: 24px;
   width: 888px;
-  height: 368px;
 }
 .img {
   border-radius: 10px;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0;
 }
 .camperImg {
   height: 320px;
@@ -23,7 +23,8 @@
 .textWrap {
   display: flex;
   align-items: center;
-  gap: 248px;
+  justify-content: space-between;
+  font-size: 24px;
 }
 .priceWrap {
   display: flex;
@@ -31,6 +32,7 @@
 }
 .contentWrap {
   display: flex;
+  margin-bottom: 28px;
 }
 .informationContainer {
   width: 524px;

@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import css from './CamperCard.module.css';
 import Button from '../Button/Button';
+import Categories from '../Categories/Categories';
 
 const CamperCard = ({ camper }) => (
   <div className={css.cardContainer}>
@@ -33,7 +34,7 @@ const CamperCard = ({ camper }) => (
           </svg>
         </div>
         <p>{camper.rating}</p>
-        <p>({camper.reviews[0].reviewer_rating} reviews)</p>
+        <p>({camper.reviews[0].reviewer_rating} Reviews)</p>
 
         <div>
           <svg width="16" height="16" className={css.iconMap}>
@@ -44,6 +45,7 @@ const CamperCard = ({ camper }) => (
       </div>
       <p className={css.imgDescription}>{camper.description}</p>
       <Link to={`/campers/${camper.id}`}>
+        <Categories text={camper.engine} />
         <Button text="Show more" />
       </Link>
     </div>
