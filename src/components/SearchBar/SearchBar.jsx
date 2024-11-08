@@ -43,7 +43,7 @@ const SearchBar = ({ filters, updateFilters, filterCampers }) => {
             type="checkbox"
             name="ac"
             value="ac"
-            icon="/src/images/svg-sprite.svg#icon-wind"
+            icon="/src/images/svg-sprite.svg#icon-AC"
             text="AC"
             filters={filters}
             handleInputChange={handleInputChange}
@@ -52,7 +52,7 @@ const SearchBar = ({ filters, updateFilters, filterCampers }) => {
             type="checkbox"
             name="automatic"
             value="automatic"
-            icon="/src/images/svg-sprite.svg#icon-diagram"
+            icon="/src/images/svg-sprite.svg#icon-automatic"
             text="Automatic"
             filters={filters}
             handleInputChange={handleInputChange}
@@ -61,7 +61,7 @@ const SearchBar = ({ filters, updateFilters, filterCampers }) => {
             type="checkbox"
             name="kitchen"
             value="kitchen"
-            icon="/src/images/svg-sprite.svg#icon-cup-hot"
+            icon="/src/images/svg-sprite.svg#icon-kitchen"
             text="Kitchen"
             filters={filters}
             handleInputChange={handleInputChange}
@@ -79,7 +79,7 @@ const SearchBar = ({ filters, updateFilters, filterCampers }) => {
             type="checkbox"
             name="bathroom"
             value="bathroom"
-            icon="/src/images/svg-sprite.svg#icon-droplet"
+            icon="/src/images/svg-sprite.svg#icon-water"
             text="Bathroom"
             filters={filters}
             handleInputChange={handleInputChange}

@@ -44,8 +44,19 @@ const CamperCard = ({ camper }) => (
         <p>{camper.location}</p>
       </div>
       <p className={css.imgDescription}>{camper.description}</p>
+      <Categories
+        engine={camper.engine}
+        AC={camper.AC}
+        bathroom={camper.bathroom}
+        kitchen={camper.kitchen}
+        TV={camper.TV}
+        radio={camper.radio}
+        refrigerator={camper.refrigerator}
+        microwave={camper.microwave}
+        gas={camper.gas}
+        water={camper.water}
+      />
       <Link to={`/campers/${camper.id}`}>
-        <Categories text={camper.engine} />
         <Button text="Show more" />
       </Link>
     </div>

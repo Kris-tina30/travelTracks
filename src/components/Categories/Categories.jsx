@@ -17,80 +17,80 @@ const Categories = ({
     <div>
       <ul className={css.categories}>
         {AC && (
-          <li>
-            <svg width="20" height="20">
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
               <use href="/src/images/svg-sprite.svg#icon-AC"></use>
             </svg>
             AC
           </li>
         )}
         {engine && (
-          <li>
-            <svg width="20" height="20">
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
               <use href="/src/images/svg-sprite.svg#icon-petrol"></use>
             </svg>
             Petrol
           </li>
         )}
         {bathroom && (
-          <li>
-            <svg width="20" height="20">
-              <use href="/src/images/svg-sprite.svg#icon-heart"></use>
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
+              <use href="/src/images/svg-sprite.svg#icon-bathroom"></use>
             </svg>
             Bathroom
           </li>
         )}
         {kitchen && (
-          <li>
-            <svg width="20" height="20">
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
               <use href="/src/images/svg-sprite.svg#icon-kitchen"></use>
             </svg>
             Kitchen
           </li>
         )}
         {TV && (
-          <li>
-            <svg width="20" height="20">
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
               <use href="/src/images/svg-sprite.svg#icon-tv"></use>
             </svg>
             TV
           </li>
         )}
         {radio && (
-          <li>
-            <svg width="20" height="20">
-              <use href="/src/images/svg-sprite.svg#icon-icon-radio"></use>
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
+              <use href="/src/images/svg-sprite.svg#icon-radio"></use>
             </svg>
             Radio
           </li>
         )}
         {refrigerator && (
-          <li>
-            <svg width="20" height="20">
-              <use href="/src/images/svg-sprite.svg#icon-heart"></use>
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
+              <use href="/src/images/svg-sprite.svg#icon-refrigerator"></use>
             </svg>
             Refrigerator
           </li>
         )}
         {microwave && (
-          <li>
-            <svg width="20" height="20">
-              <use href="/src/images/svg-sprite.svg#icon-heart"></use>
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
+              <use href="/src/images/svg-sprite.svg#icon-microwave"></use>
             </svg>
             Microwave
           </li>
         )}
         {gas && (
-          <li>
-            <svg width="20" height="20">
-              <use href="/src/images/svg-sprite.svg#icon-heart"></use>
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
+              <use href="/src/images/svg-sprite.svg#icon-gas"></use>
             </svg>
             Gas
           </li>
         )}
         {water && (
-          <li>
-            <svg width="20" height="20">
+          <li className={css.categoriesList}>
+            <svg className={css.categoriesSvg} width="20" height="20">
               <use href="/src/images/svg-sprite.svg#icon-water"></use>
             </svg>
             Water
