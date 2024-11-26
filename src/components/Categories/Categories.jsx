@@ -14,7 +14,7 @@ const Categories = ({
   water,
 }) => {
   return (
-    <div>
+    <div className={css.categoriesWraper}>
       <ul className={css.categories}>
         {AC && (
           <li className={css.categoriesList}>

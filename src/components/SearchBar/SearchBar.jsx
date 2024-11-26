@@ -118,7 +118,7 @@ const SearchBar = ({ filters, updateFilters, filterCampers }) => {
           />
         </div>
       </div>
-      <Button text="Search" onClick={filterCampers} />
+      <Button text="Search" extraClass={css.buttonRed} onClick={filterCampers} />
     </div>
   );
 };

@@ -1,9 +1,20 @@
 import React from 'react';
 import css from './Button.module.css';
 
-const Button = ({ text, onClick, className = css.buttonRed, ariaLabel = 'button' }) => {
+const Button = ({
+  text,
+  onClick,
+  className = css.button,
+  extraClass = '',
+  ariaLabel = 'button',
+}) => {
   return (
-    <button type="button" className={className} aria-label={ariaLabel} onClick={onClick}>
+    <button
+      type="button"
+      className={`${className} ${extraClass}`.trim()}
+      aria-label={ariaLabel}
+      onClick={onClick}
+    >
       {text}
     </button>
   );

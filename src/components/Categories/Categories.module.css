@@ -5,8 +5,7 @@
 }
 
 .categoriesList {
-  width: 143px;
-  height: 48px;
+  padding: 14px 18px;
   background-color: var(--secondary-color-gray-light);
   border-radius: 100px;
   align-content: center;
@@ -21,4 +20,7 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+}
+.categoriesWraper {
+  margin-bottom: 24px;
 }
